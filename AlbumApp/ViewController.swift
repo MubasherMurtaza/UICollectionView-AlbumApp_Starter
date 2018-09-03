@@ -60,10 +60,10 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if indexPath.section == 1{
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: imgCellId, for: indexPath) as! ImgCell
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: albumCellId, for: indexPath) as! AlbumCell
             return cell
         }
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: albumCellId, for: indexPath) as! AlbumCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: imgCellId, for: indexPath) as! ImgCell
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize{
